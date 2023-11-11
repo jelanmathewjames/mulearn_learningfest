@@ -10,7 +10,7 @@
 </body>
 <script>
 	fetch('person.json')
-        .then((response) =>{ response.json()})
+        .then((response) =>{ return response.json()})
         .then((obj) => { readData(obj) })
 	function readData(data){
             let details = document.getElementById('details')
