@@ -12,15 +12,16 @@
 	fetch('person.json')
         .then((response) =>{ response.json()})
         .then((data) => {
-            let details = document.getElementById('details')
-            for(let person of data){
-                let person = document.createElement('div');
-                entry.innerHTML = `<p>name: ${person.name}</p>
-                                    <p>nge: ${person.age}</p>
-                                    <p>place: ${person.place}</p>
-                                    <p>dob : ${person.dob}</p>`
-                details.appendChild(details)
-            }
+		console.log(data)
+            // let details = document.getElementById('details')
+            // for(let person of data){
+            //     let person = document.createElement('div');
+            //     entry.innerHTML = `<p>name: ${person.name}</p>
+            //                         <p>nge: ${person.age}</p>
+            //                         <p>place: ${person.place}</p>
+            //                         <p>dob : ${person.dob}</p>`
+            //     details.appendChild(details)
+            // }
         })
 </script>
 </html>
