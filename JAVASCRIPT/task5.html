@@ -11,7 +11,7 @@
 <script>
 	fetch('person.json')
         .then((response) =>{ response.json()})
-        .then((obj) => { readData(obj) }
+        .then((obj) => { readData(obj) })
 	function readData(obj){
             let details = document.getElementById('details')
             for(const person of data){
