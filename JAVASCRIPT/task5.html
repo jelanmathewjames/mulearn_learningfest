@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <div id="details"></div>
+</body>
+<script>
+	fetch('person.json')
+        .then((response) =>{ response.json()})
+        .then((data) => {
+            let details = document.getElementById('details')
+            for(let person of data){
+                let person = document.createElement('div');
+                entry.innerHTML = `<p>name: ${person.name}</p>
+                                    <p>nge: ${person.age}</p>
+                                    <p>place: ${person.place}</p>
+                                    <p>dob : ${person.dob}</p>`
+                details.appendChild(details)
+            }
+        })
+</script>
+</html>
