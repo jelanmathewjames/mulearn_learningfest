@@ -14,12 +14,12 @@
         .then((obj) => { readData(obj) })
 	function readData(data){
             let details = document.getElementById('details')
-            for(const person of data){
+            for(const persons of data){
                 let person = document.createElement('div');
-                entry.innerHTML = `<p>name: ${person.name}</p>
-                                    <p>nge: ${person.age}</p>
-                                    <p>place: ${person.place}</p>
-                                    <p>dob : ${person.dob}</p>`
+                person.innerHTML = `<p>name: ${persons.name}</p><br>
+                                    <p>age: ${persons.age}</p><br>
+                                    <p>place: ${persons.place}</p><br>
+                                    <p>dob : ${persons.dob}</p><br>`
                 details.appendChild(details)
             }
         }
