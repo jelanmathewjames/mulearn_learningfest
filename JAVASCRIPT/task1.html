@@ -8,10 +8,10 @@
 <body>
     <h1>DICE ROLLER</h1>
     <label id="roll"></label><br>
-    <button onclick="diceroll()">ROLL</button>
+    <button onclick="diceRoll()">ROLL</button>
 </body>
 <script>
-    function diceroll(){
+    function diceRoll(){
         let randint = Math.floor(Math.random()*6)+1
         document.getElementById('roll').innerHTML = randint
     }
